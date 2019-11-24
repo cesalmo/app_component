@@ -16,10 +16,10 @@ function onButtonClickBoton1() {
         });
 }
 
-var Router = Vaadin.Router;
-const enlaceRouter = document.getElementById('enlaceRouter');
-const oRouter = new Router(enlaceRouter);
-oRouter.setRoutes([
-    {path: '/', component: 'comp-enlace1'},
-    {path: '/enlace2', component: 'comp-enlace2'},
-  ]);
+// var Router = Vaadin.Router;
+// const enlaceRouter = document.getElementById('enlaceRouter');
+// const oRouter = new Router(enlaceRouter);
+// oRouter.setRoutes([
+//     {path: '/', component: 'comp-enlace1'},
+//     {path: '/enlace2', component: 'comp-enlace2'},
+//   ]);
