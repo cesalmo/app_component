@@ -9,6 +9,7 @@
   <base href="/">
 
   <script type="module" src="./page1/comp-page1.js"></script>
+  <script src="https://unpkg.com/@vaadin/router/dist/vaadin-router.umd.min.js"></script>
 
   <title>Carallo App</title>
 </head>
@@ -23,7 +24,15 @@
       <div class="fd-shell__app">
         <div class="fd-app">
             <div class="fd-app__navigation fd-app__navigation--horizontal">
-              <p>navegacion</p>
+
+                <ul class="fd-tabs" role="tablist">
+                    <li class="fd-tabs__item">
+                        <a class="fd-tabs__link" href=""  role="tab">enlace1</a>
+                    </li>
+                    <li class="fd-tabs__item">
+                        <a class="fd-tabs__link"  href="enlace2" role="tab">enlace2</a>
+                    </li>  
+                </ul>
             </div>
           <main class="fd-app__main">
 
@@ -33,12 +42,15 @@
                         </header>
 
                         <div class="fd-page__content fd-has-background-color-neutral-2">
+
+                          <div id="enlaceRouter">
+
+                          </div>
                           <ui5-input id="input1" placeholder="Id post"></ui5-input>
                           <ui5-button id="boton1">Actualiza</ui5-button>
                           <br>
                           <comp-page1 id="lista1"></comp-page1>
                         </div>
-
                         <script src="./page1/page1scripts.js"></script>
                       </div>
                       
