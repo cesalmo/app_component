@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/fundamental-styles@0.3.0/dist/fundamental-styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+
+  <script type="module" src="./page1/comp-page1.js"></script>
+
+  <title>Carallo App</title>
+</head>
+
+<body>
+  <div class="fd-shell fd-shell--fundamentals">
+
+    <div class="fd-shell__header">
+    </div>
+
+
+      <div class="fd-shell__app">
+        <div class="fd-app">
+            <div class="fd-app__navigation fd-app__navigation--horizontal">
+              <p>navegacion</p>
+            </div>
+          <main class="fd-app__main">
+
+                      <div class="fd-page">
+                        <header class="fd-page__header fd-has-background-color-background-2">
+                          <h1>Mi App con componentes</h1>
+                        </header>
+
+                        <div class="fd-page__content fd-has-background-color-neutral-2">
+                          <ui5-input id="input1" placeholder="Id post"></ui5-input>
+                          <ui5-button id="boton1">Actualiza</ui5-button>
+                          <br>
+                          <comp-page1 id="lista1"></comp-page1>
+                        </div>
+
+                        <script src="./page1/page1scripts.js"></script>
+                      </div>
+                      
+                      <div class="fd-shell__footer">
+                        <p1>Pie de App</p1>
+                      </div>
+
+          </main>
+
+        </div>
+      </div>
+  </div>
+</body>
+
+</html>
