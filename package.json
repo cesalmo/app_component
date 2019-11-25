@@ -5,23 +5,15 @@
   "author": "web-app",
   "license": "MIT",
   "scripts": {
-    "start": "es-dev-server --app-index index.html --node-resolve --open --watch",
-    "build_rollup": "rimraf dist && rollup -c rollup.config.js",
-    "start:build_rollup": "es-dev-server --app-index dist/index.html --open",
-    "build_wp": "webpack --mode production",
-    "start:build_wp": "es-dev-server --app-index dist/index.html --open"
+    "serve" :"parcel serve index.html",
+    "build" : "parcel build index.html"
+
   },
   "dependencies": {
     "@ui5/webcomponents": "^1.0.0-rc.4",
     "lit-html": "^1.0.0"
   },
   "devDependencies": {
-    "@open-wc/building-rollup": "^0.14.3",
-    "@open-wc/building-webpack": "^2.8.2",
-    "es-dev-server": "^1.26.1",
-    "rimraf": "^3.0.0",
-    "rollup": "^1.27.4",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "parcel-bundler": "^1.12.4"
   }
 }
