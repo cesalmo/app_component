@@ -7,7 +7,7 @@
   "scripts": {
     "serve": "es-dev-server --app-index index.html --node-resolve --watch --open",
     "serve_parcel": "parcel serve index.html",
-    "build_parcel": "parcel build index.html"
+    "build_parcel": "parcel build index.html --no-minify"
   },
   "dependencies": {
     "@ui5/webcomponents": "^1.0.0-rc.4",
