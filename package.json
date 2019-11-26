@@ -5,15 +5,16 @@
   "author": "web-app",
   "license": "MIT",
   "scripts": {
-    "serve" :"parcel serve index.html",
-    "build" : "parcel build index.html"
-
+    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open",
+    "serve_parcel": "parcel serve index.html",
+    "build_parcel": "parcel build index.html"
   },
   "dependencies": {
     "@ui5/webcomponents": "^1.0.0-rc.4",
     "lit-html": "^1.0.0"
   },
   "devDependencies": {
+    "es-dev-server": "^1.26.1",
     "parcel-bundler": "^1.12.4"
   }
 }

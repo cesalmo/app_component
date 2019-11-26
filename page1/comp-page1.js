@@ -6,4 +6,5 @@ import { enlace1 } from "./src/enlace1.js";
 window.customElements.define('comp-enlace1', enlace1);
 import { enlace2 } from "./src/enlace2.js";
 window.customElements.define('comp-enlace2', enlace2);
+import "@ui5/webcomponents/dist/Label";
 

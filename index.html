@@ -8,11 +8,11 @@
   <meta name="Description" content="Put your description here.">
   <base href="/">
 
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="module" src="./page1/comp-page1.js"></script>
-  <script src="https://unpkg.com/@vaadin/router/dist/vaadin-router.umd.min.js"></script>
+  <!-- <script src="https://unpkg.com/@vaadin/router/dist/vaadin-router.umd.min.js"></script> -->
 
-  <title>Carallo App</title>
+  <title>Material en ubicación</title>
 </head>
 
 <body>
@@ -22,54 +22,50 @@
     </div>
 
 
-      <div class="fd-shell__app">
-        <div class="fd-app">
-            <div class="fd-app__navigation fd-app__navigation--horizontal">
+    <div class="fd-shell__app">
+      <div class="fd-app">
+        <!-- <div class="fd-app__navigation fd-app__navigation--horizontal">
 
-                <ul class="fd-tabs" role="tablist">
-                    <li class="fd-tabs__item">
-                        <a class="fd-tabs__link" href=""  role="tab">enlace1</a>
-                    </li>
-                    <li class="fd-tabs__item">
-                        <a class="fd-tabs__link"  href="enlace2" role="tab">enlace2</a>
-                    </li>  
-                </ul>
+          <ul class="fd-tabs" role="tablist">
+            <li class="fd-tabs__item">
+              <a class="fd-tabs__link" href="" role="tab">enlace1</a>
+            </li>
+            <li class="fd-tabs__item">
+              <a class="fd-tabs__link" href="enlace2" role="tab">enlace2</a>
+            </li>
+          </ul>
+        </div> -->
+        <main class="fd-app__main">
+
+          <div class="fd-page">
+            <header class="fd-page__header fd-has-background-color-background-2">
+              <h1>Material disponible</h1>
+            </header>
+
+            <div class="fd-page__content fd-has-background-color-neutral-2">
+
+              <!-- <div id="enlaceRouter"> -->
+
+              <!-- </div> -->
+              <ui5-label  for="input1" required>Material</ui5-label>
+              <ui5-input id="input1" placeholder="81075" required="true" ></ui5-input>
+
+              <ui5-button id="boton1">Consulta</ui5-button>
+
+              <!-- <br> -->
+              <comp-page1 id="lista1"></comp-page1>
             </div>
-          <main class="fd-app__main">
+            <script src="./page1/page1scripts.js"></script>
+          </div>
 
-                      <div class="fd-page">
-                        <header class="fd-page__header fd-has-background-color-background-2">
-                          <h1>Mi App con componentes</h1>
-                        </header>
+          <div class="fd-shell__footer">
+            <p1>Pie de App</p1>
+          </div>
 
-                        <div class="fd-page__content fd-has-background-color-neutral-2">
+        </main>
 
-                          <div id="enlaceRouter">
-
-                          </div>
-                         
-                            
-                            <ui5-input id="input1" placeholder="Id post"></ui5-input>
-                              
-                             
-                            <ui5-button id="boton1">Actualiza</ui5-button>
-                        
-                          
-                         
-                          <!-- <br> -->
-                          <comp-page1 id="lista1"></comp-page1>
-                        </div>
-                        <script src="./page1/page1scripts.js"></script>
-                      </div>
-                      
-                      <div class="fd-shell__footer">
-                        <p1>Pie de App</p1>
-                      </div>
-
-          </main>
-
-        </div>
       </div>
+    </div>
   </div>
 </body>
 
