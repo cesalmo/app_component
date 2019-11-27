@@ -2,3 +2,6 @@ node_modules
 dist
 .cache
 esm
+dist2
+esm
+umd

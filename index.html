@@ -2,29 +2,41 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="./barr.css" type="text/css">
+  
   <link rel="stylesheet" href="https://unpkg.com/fundamental-styles@0.3.0/dist/fundamental-styles.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Put your description here.">
+  <!-- <base href="/sap/bc/ui5_ui5/sap/zcam_ubic/"> -->
   <base href="/">
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="module" src="./page1/comp-page1.js"></script>
   <!-- <script src="https://unpkg.com/@vaadin/router/dist/vaadin-router.umd.min.js"></script> -->
+  <script data-ui5-config type="application/json">
+    {
+      "compactSize": false
+    }
+    </script>
 
   <title>Material en ubicación</title>
 </head>
 
 <body>
-  <div class="fd-shell fd-shell--fundamentals">
+  <div class="fd-shell fd-shell--fundamentals" style="overflow:auto">
 
     <div class="fd-shell__header">
+        <a href="#home" class="fd-shell__header--fixed">Home</a>
+      
     </div>
 
+    <!-- <div class="barra_nav">
+      
+    </div> -->
 
     <div class="fd-shell__app">
       <div class="fd-app">
-        <!-- <div class="fd-app__navigation fd-app__navigation--horizontal">
+        <!-- <div class="fd-app__navigation">
 
           <ul class="fd-tabs" role="tablist">
             <li class="fd-tabs__item">
@@ -34,10 +46,13 @@
               <a class="fd-tabs__link" href="enlace2" role="tab">enlace2</a>
             </li>
           </ul>
-        </div> -->
-        <main class="fd-app__main">
 
-          <div class="fd-page">
+          <!-- fd-app_navigation -->
+        <!-- </div> -->
+
+        <main class="fd-app__main fd-has-margin-right-small">
+
+          <div>
             <header class="fd-page__header fd-has-background-color-background-2">
               <h1>Material disponible</h1>
             </header>
@@ -47,11 +62,14 @@
               <!-- <div id="enlaceRouter"> -->
 
               <!-- </div> -->
-              <ui5-label  for="input1" required>Material</ui5-label>
-              <ui5-input id="input1" placeholder="81075" required="true" ></ui5-input>
+              <div style="padding: 1rem">
+                <ui5-label required wrap="true" style="vertical-align: text-top">Material</ui5-label>
+                <ui5-input id="input1" value="81075" required="true" style="width : 20em"></ui5-input>
+              </div>
 
-              <ui5-button id="boton1">Consulta</ui5-button>
-
+              <div class="fd-has-padding-tiny">
+                <ui5-button id="boton1">Consulta</ui5-button>
+              </div>
               <!-- <br> -->
               <comp-page1 id="lista1"></comp-page1>
             </div>
@@ -64,8 +82,15 @@
 
         </main>
 
+
+
+
+        <!-- fd-app-->
       </div>
+      <!-- shell__app -->
     </div>
+
+    <!-- fd-shell -->
   </div>
 </body>
 

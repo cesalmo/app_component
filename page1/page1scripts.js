@@ -15,6 +15,12 @@ function onButtonClickBoton1() {
     //         lista1.datos_lista = json;
     //     });
     var input1 = document.getElementById("input1");
+
+    var lista1 = document.querySelector("#lista1");
+    // setter
+    lista1.datos_lista = file_data;
+    return;
+// ***************************************************************************
     var sURL =
         "http://erpapptest.capsa.es:8000/zcam_rest_test/hello?sap-client=500?matnr=" + input1.value;
     
@@ -51,3 +57,232 @@ function onButtonClickBoton1() {
 //     { path: '/', component: 'comp-enlace1' },
 //     { path: '/enlace2', component: 'comp-enlace2' },
 // ]);
+
+
+var file_data = 
+[
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1749825,
+      "LGTYP": "A02",
+      "LGPLA": "P030802",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1749826,
+      "LGTYP": "A02",
+      "LGPLA": "P030802",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1749827,
+      "LGTYP": "A02",
+      "LGPLA": "P030802",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1749830,
+      "LGTYP": "A02",
+      "LGPLA": "P020702",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1748818,
+      "LGTYP": "A02",
+      "LGPLA": "P020201",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1748819,
+      "LGTYP": "A02",
+      "LGPLA": "P020201",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1748820,
+      "LGTYP": "A02",
+      "LGPLA": "P020201",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1750920,
+      "LGTYP": "A02",
+      "LGPLA": "P020702",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1750921,
+      "LGTYP": "A02",
+      "LGPLA": "P020702",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1750925,
+      "LGTYP": "A05",
+      "LGPLA": "ASUE",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 280,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1753635,
+      "LGTYP": "922",
+      "LGPLA": "CAMBIOEST",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 650,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 10485,
+      "LGTYP": "920",
+      "LGPLA": "TRASPASO",
+      "WERKS": "5001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 600,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1751789,
+      "LGTYP": "P01",
+      "LGPLA": "ZUHT",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 250,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1753331,
+      "LGTYP": "P01",
+      "LGPLA": "ZUHT",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 389,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1752270,
+      "LGTYP": "P01",
+      "LGPLA": "ZUHT",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 336,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    },
+    {
+      "MANDT": "500",
+      "LGNUM": "1R1",
+      "LQNUM": 1744593,
+      "LGTYP": "P01",
+      "LGPLA": "ZUHT",
+      "WERKS": "1001",
+      "MATNR": "81075",
+      "MAKTX": "PLANCHA SEPAR. 780x1135 COMBI",
+      "VERME": 1191,
+      "MEINS": "ST",
+      "VFDAT": "0000-00-00",
+      "F1": ""
+    }
+  ];

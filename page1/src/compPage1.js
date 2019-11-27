@@ -20,7 +20,7 @@ export class compPage1 extends HTMLElement {
     const template = html`
 
       <ui5-table
-        class="demo-table"
+       
         id="table"
         no-data-text="No Data"
         show-no-data
@@ -30,7 +30,7 @@ export class compPage1 extends HTMLElement {
           <span style="line-height: 1.4rem">Quanto</span>
         </ui5-table-column>
 
-        <ui5-table-column slot="columns" popin-text="Tipo de almacén" demand-popin>
+        <ui5-table-column slot="columns" popin-text="Tipo de almacén">
           <span style="line-height: 1.4rem">Tipo Alm.</span>
         </ui5-table-column>
 
@@ -38,11 +38,11 @@ export class compPage1 extends HTMLElement {
           <span style="line-height: 1.4rem">Ubic.</span>
         </ui5-table-column>
 
-        <ui5-table-column slot="columns" popin-text="Nº material" demand-popin>
+        <ui5-table-column slot="columns" popin-text="Nº material" >
           <span style="line-height: 1.4rem">Mat.</span>
         </ui5-table-column>
 
-        <ui5-table-column slot="columns" popin-text="Descripción" demand-popin>
+        <ui5-table-column slot="columns" popin-text="Descripción" min-width="700">
         <span style="line-height: 1.4rem">Descripción</span>
         </ui5-table-column>
 

@@ -5,7 +5,7 @@
   "author": "web-app",
   "license": "MIT",
   "scripts": {
-    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open",
+    "serve": "es-dev-server --app-index index.html --node-resolve --watch",
     "serve_parcel": "parcel serve index.html",
     "build_parcel": "parcel build index.html --no-minify",
     "build_rollup": "npx rollup --config"
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "es-dev-server": "^1.26.1",
+    "express": "^4.17.1",
     "parcel-bundler": "^1.12.4",
     "rollup": "^1.27.5",
     "rollup-plugin-node-resolve": "^5.2.0"
