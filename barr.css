@@ -1,13 +1,17 @@
-/* .barra_nav {
+ .barra_nav {
     overflow: hidden;
-    background-color: white;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width
-  }  */
+    width: 100%; /* Full width */
+    background-color: var(--fd-color-shell-1);
+    height: 48px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }  
 
-/* Links inside the navbar
-.barra_nav a {
+/* Links inside the navbar */
+ /* .barra_nav a {
   float: left;
   display: block;
   color: #f2f2f2;
