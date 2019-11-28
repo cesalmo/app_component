@@ -8,4 +8,5 @@ Parcel: añadir a los bundles .js lo siguiente:
 
 en index .html cambiar las rutas de los bundles a:
     
+    
     /sap/bc/ui5_ui5/sap/zcam_ubic/  
