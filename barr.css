@@ -4,10 +4,11 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     background-color: var(--fd-color-shell-1);
-    height: 48px;
+    min-height: 48px;
     z-index: 1;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }  
 
 /* Links inside the navbar */

@@ -15,7 +15,7 @@
   <!-- <script src="https://unpkg.com/@vaadin/router/dist/vaadin-router.umd.min.js"></script> -->
   <script data-ui5-config type="application/json">
     {
-      "compactSize": false
+      "compactSize": true
     }
     </script>
 
@@ -26,7 +26,12 @@
   <div class="fd-shell--fundamentals"> <!-- fd-shell  -->
 
     <div class="barra_nav"> <!-- fd-shell__header  -->
-        <ui5-button id="bot_cab1" class="">Ácción 1</ui5-button> <!-- fd-shell__header--fixed -->
+        <div>
+        <ui5-button id="bot_cab1" class="fd-has-margin-tiny">Ácción 1</ui5-button> <!-- fd-shell__header--fixed -->
+      </div>
+      <div>
+        <ui5-button id="bot_cab2" class="">Ácción 2</ui5-button>
+      </div>
     </div>
 
     <!-- <div class="barra_nav">
@@ -46,7 +51,7 @@
             </li>
           </ul>
 
-          <!-- fd-app_navigation -->
+          fd-app_navigation -->
         <!-- </div> -->
 
         <main class="fd-app__main fd-has-margin-right-small">
