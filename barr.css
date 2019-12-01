@@ -2,28 +2,85 @@
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    width: 96%; /* Full width */
     background-color: var(--fd-color-shell-1);
     min-height: 48px;
     z-index: 1;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-  }  
+  } 
+  .cabecera{
+    font-weight: 600;
+    /* border-style: solid; */
+  }
+   .cabecera div{
+    /* border-style: solid; */
+    
 
-/* Links inside the navbar */
- /* .barra_nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-} */
+    
 
-/* Change background on mouse-over
-.barra_nav a:hover {
-  background: #ddd;
-  color: white;
-} */
+  }
 
+  #filas div{
+    /* border-style: solid; */
+    overflow: hidden;
+  }
+  /* Cuanto */
+  .col1{
+    min-width: 80px;
+    max-width: 80px;
+    /* margin-right: 5px; */
+    text-align: left;
+    
+  }
+  /* tipo almacen */
+  .col2{
+    min-width: 60px;
+    max-width: 60px;
+    /* margin-right: 5px; */
+    text-align: left;
+  }
+  /* ubicacion */
+  .col3{
+    min-width: 80px;
+    max-width: 80px;
+    text-align: left;
+    margin-right: 5px;
+  }
+  /* material */
+  .col4{
+    min-width: 80px;
+    max-width: 80px;
+    text-align: left;
+  }
+  /* descripc */
+  .col5{
+    min-width: 200px;
+    max-width: 200px;
+    text-align: left;
+     margin-right: 10px;
+  }
+  /* cantidad */
+  .col6{
+    min-width: 60px;
+    max-width: 60px;
+    text-align: right;
+    margin-right: 5px;
+  }
+  /* unidad */
+  .col7{
+    min-width: 60px;
+    max-width: 60px;
+    text-align: left;
+  }
+
+  /* dispositivos mobiles */
+  @media all and (max-width: 400px) { 
+
+    .dest_tab{
+      display: none;
+
+    }
+
+  }
