@@ -10,7 +10,12 @@ export class compBody extends HTMLElement{
     
     constructor(){
         super();
-        this.vista = 1;
+        // valores iniciales
+        document.store = {
+            compBody : {
+                "v" : 1
+            }
+        }
     }
     connectedCallback(){
         //solo inputs
@@ -30,10 +35,11 @@ export class compBody extends HTMLElement{
                 <comp-page1 id="lista1"></comp-page1>
              </div>
             `;
-       if (this.vista == 1) {
+
+       if (document.store.compBody.v == 1 ) {
         render(template1, this);
        } 
-       else if (this.vista == 2){
+       else if (document.store.compBody.v == 2){
         render(template2, this);
        }
        

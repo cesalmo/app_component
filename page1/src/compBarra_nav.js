@@ -38,10 +38,11 @@ export class compBarra_nav extends HTMLElement {
             
             var body = document.getElementsByTagName("comp-body");
             // renderiza vista
-            body[0].render_vista = 2;  
+            document.store.compBody.v = 2;
+            document.store.compBody.datos_lista = file_data;
             // setter
             var lista1 = document.querySelector("#lista1");
-            lista1.datos_lista = file_data;
+           
             return;
             // ***************************************************************************
             var sURL =
