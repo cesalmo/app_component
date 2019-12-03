@@ -1,10 +1,5 @@
 import { html, render } from "lit-html";
 
-// import "@ui5/webcomponents/dist/Table.js";
-// import "@ui5/webcomponents/dist/TableColumn.js";
-// import "@ui5/webcomponents/dist/TableRow.js";
-// import "@ui5/webcomponents/dist/TableCell.js";
-
 import "@ui5/webcomponents/dist/List.js";
 import "@ui5/webcomponents/dist/StandardListItem.js";
 import "@ui5/webcomponents/dist/CustomListItem.js";
@@ -12,13 +7,13 @@ import "@ui5/webcomponents/dist/GroupHeaderListItem.js";
 
 export class compPage1 extends HTMLElement {
   set datos_lista(datos) {
-    this.state = datos;
+    this.state = document.store.compPage1.datos_lista;
     this.connectedCallback();
   }
 
   constructor() {
     super();
-    this.state = [];
+    this.state = document.store.compPage1.datos_lista;
   }
 
   connectedCallback() {
@@ -43,10 +38,9 @@ export class compPage1 extends HTMLElement {
 
     render(template, this);
 
+    // flujo para des/seleccionar elemento anterior en la lista
     var oList = document.getElementById("myList");
     oList.addEventListener("selectionChange", function (oEvent) {
-      // console.log("Evento");
-      // console.log(oEvent);
       // deselecciona cabecera
       document.getElementById("cabec1").selected = false;
       document.getElementById("cabec1").getElementsByTagName("ui5-li-custom")[0].selected = false;

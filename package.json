@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@ui5/webcomponents": "^1.0.0-rc.4",
-    "lit-html": "^1.0.0"
+    "lit-html": "^1.0.0",
+    "mobx": "^5.15.0"
   },
   "devDependencies": {
     "express": "^4.17.1",
